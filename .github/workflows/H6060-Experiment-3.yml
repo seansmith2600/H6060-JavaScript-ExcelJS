@@ -80,7 +80,7 @@ jobs:
           node-version: 16.x
 
       - name: Install JavaScript Dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build ExcelJS Application - ${{ matrix.os }}
         uses: seansmith2600/H6060-Experiment-Resources/.github/actions/javascript/javascript-build@main
@@ -106,7 +106,7 @@ jobs:
           node-version: 16.x
 
       - name: Install JavaScript Dependencies
-        run: npm install
+        run: npm ci
 
       - name: Create Dependency Tree - ${{ matrix.os }}
         uses: seansmith2600/H6060-Experiment-Resources/.github/actions/javascript/javascript-dependency-tree@main
@@ -139,7 +139,7 @@ jobs:
           node-version: 16.x
 
       - name: Install JavaScript Dependencies
-        run: npm install
+        run: npm ci
 
       - name: Create CycloneDX SBOM - ${{ matrix.os }}
         uses: seansmith2600/H6060-Experiment-Resources/.github/actions/javascript/javascript-cyclonedx-sbom@main
