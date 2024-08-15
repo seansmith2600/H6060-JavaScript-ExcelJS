@@ -182,6 +182,7 @@ jobs:
       sca-snyk-enabled: ${{ inputs.sca-snyk-enabled }}
       reporting-enabled: ${{ inputs.reporting-enabled }}
       horusec-files-or-paths-to-ignore: "**/test/**,**/dist/**"
+      owasp-properties-file: depcheck.properties
       semgrep-files-or-paths-to-ignore: "test,dist"
       sonarqube-sources: .
       project-name: H6060-JavaScript-ExcelJS
